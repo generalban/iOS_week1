@@ -1,0 +1,142 @@
+{
+  "teamMembers": [
+    {
+      "name": "김동글",
+      "mbti": "ESFJ",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    },
+    {
+      "name": "김상민",
+      "mbti": "INFJ",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    },
+    {
+      "name": "반성준",
+      "mbti": "ENTP",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    },
+    {
+      "name": "서지민",
+      "mbti": "ESTP",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    },
+    {
+      "name": "임성수",
+      "mbti": "ENFP",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    },
+    {
+      "name": "한현준",
+      "mbti": "INFJ",
+      "role": "역활-채워주세요",
+      "bio": "자개소개-채워주세요",
+      "imageName": "이모지 텍스트 넣어주세요",
+      "blogUrl": "블로그 URL 적어주세요",
+      "githubUrl": "깃허브 URL 적어주세요",
+      "cards": [
+        {
+          "title": "카드 제목 1",
+          "content": "카드 내용 1"
+        },
+        {
+          "title": "카드 제목 2",
+          "content": "카드 내용 2"
+        },
+        {
+          "title": "카드 제목 3",
+          "content": "카드 내용 3"
+        }
+      ]
+    }
+  ]
+}
