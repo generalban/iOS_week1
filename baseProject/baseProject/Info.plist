@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Pacifico-Regular.ttf</string>
+		<string>NotoSansKR-Light.ttf</string>
+		<string>NotoSansKR-Thin.ttf</string>
+		<string>Quicksand-Medium.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>NotoSansKR-Regular.ttf</string>
+		<string>NotoSansKR-Black.ttf</string>
+		<string>NotoSansKR-Bold.ttf</string>
+		<string>NotoSansKR-Medium.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -15,8 +27,6 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
