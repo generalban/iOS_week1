@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nemo View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="NemoViewController" customModule="baseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onionkungya" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-Ig-uCL">
+                                <rect key="frame" x="121.66666666666669" y="89" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="54c-5W-E9d"/>
+                                    <constraint firstAttribute="width" constant="150" id="XA9-RD-hPe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김동글" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu7-Un-Ab6">
+                                <rect key="frame" x="121.66666666666669" y="259" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="21p-u8-OBf"/>
+                                    <constraint firstAttribute="height" constant="50" id="XIY-ZM-K9x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZp-2J-9YC">
+                                <rect key="frame" x="121.66666666666669" y="374" width="150" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Mri-KG-zSE"/>
+                                    <constraint firstAttribute="height" constant="60" id="ocU-wv-W8I"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="힘들면 눌러보기"/>
+                                <connections>
+                                    <action selector="clickMainButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="87f-Py-EMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LZp-2J-9YC" firstAttribute="top" secondItem="Gu7-Un-Ab6" secondAttribute="bottom" constant="65" id="3O5-iF-csx"/>
+                            <constraint firstItem="Gu7-Un-Ab6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3Og-ok-6Bp"/>
+                            <constraint firstItem="DL1-Ig-uCL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Hv6-jQ-Vri"/>
+                            <constraint firstItem="DL1-Ig-uCL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="cRy-f7-ev0"/>
+                            <constraint firstItem="LZp-2J-9YC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dFj-KB-GGl"/>
+                            <constraint firstItem="Gu7-Un-Ab6" firstAttribute="top" secondItem="DL1-Ig-uCL" secondAttribute="bottom" constant="20" id="yml-rk-Co6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainButton" destination="LZp-2J-9YC" id="gdu-dv-dBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onionkungya" width="480" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
