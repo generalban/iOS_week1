@@ -5,7 +5,7 @@
 
 import UIKit
 
-class MemberButtonComponent {
+class MemberPageButtonComponent {
 
     /// 멤버 버튼 생성
     static func createMemberButton(for member: TeamMember, target: UIViewController, index: Int) -> UIButton {

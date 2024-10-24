@@ -19,9 +19,13 @@ class MemberFindSectionComponent {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.spacing = 10
-
+        
+        // 현재 멤버를 제외한 멤버 버튼 생성
         for (index, member) in members.enumerated() {
-            let memberButton = MemberButtonComponent.createMemberButton(for: member, target: target, index: index)
+            if member.name == target.member.name {
+                continue
+            }
+            let memberButton = MemberPageButtonComponent.createMemberButton(for: member, target: target, index: index)
             
             NSLayoutConstraint.activate([
                 memberButton.widthAnchor.constraint(equalToConstant: 100),

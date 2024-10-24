@@ -7,12 +7,11 @@
 		<string>Pacifico-Regular.ttf</string>
 		<string>NotoSansKR-Light.ttf</string>
 		<string>NotoSansKR-Thin.ttf</string>
-		<string>Quicksand-Thin.ttf</string>
 		<string>Quicksand-Medium.ttf</string>
 		<string>Quicksand-Bold.ttf</string>
 		<string>NotoSansKR-Regular.ttf</string>
 		<string>NotoSansKR-Black.ttf</string>
-		<string>NotoSansKR-Blod.ttf</string>
+		<string>NotoSansKR-Bold.ttf</string>
 		<string>NotoSansKR-Medium.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

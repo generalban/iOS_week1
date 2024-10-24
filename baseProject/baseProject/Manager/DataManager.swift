@@ -1,3 +1,9 @@
+// DataManager.swift
+// Json 데이터 로드를 담당하는 함수
+// 작성자: Jamong
+// 작성일: 2024-10-24
+
+// DataManager.swift - JSON 데이터 로드 확인
 import Foundation
 
 /// 데이터 로드를 담당하는 클래스
@@ -23,3 +29,4 @@ class DataManager {
         }
     }
 }
+
