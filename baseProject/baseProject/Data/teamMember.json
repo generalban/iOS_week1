@@ -8,6 +8,7 @@
       "imageName": "🙆🏻‍♀️",
       "blogUrl": "https://velog.io/@nemo_/posts",
       "githubUrl": "https://github.com/nemo-semo",
+      "mainBio" : "으샤으샤",
       "cards": [
         {
           "title": "취미",
@@ -26,24 +27,17 @@
     {
       "name": "김상민",
       "mbti": "INFJ",
-      "role": "역활-채워주세요",
-      "bio": "자개소개-채워주세요",
+      "role": "앱 화면 개발",
+      "bio": "개발 잘하고 싶은 예비 iOS 개발자에요.",
       "imageName": "🐰",
-      "blogUrl": "블로그 URL 적어주세요",
-      "githubUrl": "깃허브 URL 적어주세요",
+      "blogUrl": "https://jamong-mini.tistory.com/",
+      "githubUrl": "https://github.com/Jamong-mini",
+      "mainBio" : "밤샘 한번 해볼까요~?",
       "cards": [
         {
-          "title": "카드 제목 1",
-          "content": "카드 내용 1"
+          "title": "취미",
+          "content": "복싱, 탁구 운동하는 걸 좋아해요. 요즘 시간이 안나서 9시 끝나고 런닝합니다."
         },
-        {
-          "title": "카드 제목 2",
-          "content": "카드 내용 2"
-        },
-        {
-          "title": "카드 제목 3",
-          "content": "카드 내용 3"
-        }
       ]
     },
     {
@@ -54,6 +48,7 @@
       "imageName": "🌗",
       "blogUrl": "https://velog.io/@soungjunban/posts",
       "githubUrl": "https://github.com/generalban",
+      "mainBio" : "화이팅",
       "cards": [
         {
           "title": "자기소개",
@@ -77,6 +72,7 @@
       "imageName": "⚽️",
       "blogUrl": "https://ios-developer.tistory.com/",
       "githubUrl": "https://github.com/JIMIN-iOSDev",
+      "mainBio" : "파이팅!",
       "cards": [
         {
           "title": "ios를 선택한 이유",
@@ -100,6 +96,7 @@
       "imageName": "🧟‍♂️",
       "blogUrl": "https://seongto.notion.site/seongto-swift-wiki-13f947576b474a7e9a2e96308c9bb1e5?pvs=4",
       "githubUrl": "https://github.com/seongto",
+      "mainBio" : "야끼토리 먹고 싶다.",
       "cards": [
         {
           "title": "자기소개",
@@ -123,6 +120,7 @@
       "imageName": "🫡",
       "blogUrl": "https://swdeveloperhj.tistory.com/",
       "githubUrl": "https://github.com/HyeonJunHan0315",
+      "mainBio" : "잘 부탁드립니다!",
       "cards": [
         {
           "title": "iOS 개발자가 되고싶은 이유",

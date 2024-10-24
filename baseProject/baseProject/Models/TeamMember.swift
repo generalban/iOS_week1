@@ -38,6 +38,9 @@ struct TeamMember: Decodable {
     /// Github URL
     let githubUrl: String
     
+    /// MainPage Bio
+    let mainBio: String
+    
     /// 카드 정보 배열
     let cards: [Card]
 }

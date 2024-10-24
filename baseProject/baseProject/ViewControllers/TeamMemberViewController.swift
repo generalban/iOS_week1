@@ -52,6 +52,47 @@ class TeamMemberViewController: UIViewController {
             scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
+    
+
+    // 개인 플레이그라운드 화면으로 전환하는 메서드
+    @objc func openPlayground() {
+        // 멤버 이름에 따라 해당 스토리보드를 찾아야 함
+        var storyboardName: String?
+        var storyboardID: String?
+        
+        switch member.name {
+        case "김동글":
+            storyboardName = "" // 스토리보드 파일 이름 (확장자 .storyboard 제외)
+            storyboardID = "" // Storyboard ID
+        case "김상민":
+            storyboardName = "Jamong"
+            storyboardID = "JamongStroyboard"
+        case "반성준":
+            storyboardName = ""
+            storyboardID = ""
+        case "서지민":
+            storyboardName = ""
+            storyboardID = ""
+        case "임성수":
+            storyboardName = ""
+            storyboardID = ""
+        case "한현준":
+            storyboardName = ""
+            storyboardID = ""
+        default:
+            return // 해당 멤버가 없는 경우 아무 작업도 하지 않음
+        }
+        
+        // 스토리보드 파일을 불러오고, ViewController 인스턴스 생성
+        guard let storyboardName = storyboardName, let storyboardID = storyboardID else {
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        
+        let playgroundVC = storyboard.instantiateViewController(withIdentifier: storyboardID)
+        navigationController?.pushViewController(playgroundVC, animated: true)
+    }
         
     // 블로그 링크를 여는 메서드
     @objc func openBlogLink() {
@@ -66,8 +107,11 @@ class TeamMemberViewController: UIViewController {
             UIApplication.shared.open(url)
         }
     }
-    // 다른 멤버 페이지 이동하는 함수 (멤버 찾기 섹션에서 버튼을 눌렀을 떄 호출)
+    
+    // 다른 멤버 페이지로 이동하는 함수 (멤버 찾기 섹션에서 버튼을 눌렀을 때 호출)
     @objc func openMemberPage(_ sender: UIButton) {
-        print("멤버 페이지로 이동")
+        let selectedMember = allMembers[sender.tag]  // tag를 사용하여 해당 멤버를 찾음
+        let memberVC = TeamMemberViewController(member: selectedMember, allMembers: allMembers)
+        navigationController?.pushViewController(memberVC, animated: true)
     }
 }

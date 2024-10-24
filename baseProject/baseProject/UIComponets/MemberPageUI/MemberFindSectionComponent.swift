@@ -26,11 +26,6 @@ class MemberFindSectionComponent {
                 continue
             }
             let memberButton = MemberPageButtonComponent.createMemberButton(for: member, target: target, index: index)
-            
-            NSLayoutConstraint.activate([
-                memberButton.widthAnchor.constraint(equalToConstant: 100),
-                memberButton.heightAnchor.constraint(equalToConstant: 129)
-            ])
 
             stackView.addArrangedSubview(memberButton)
         }
