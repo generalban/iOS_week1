@@ -66,6 +66,10 @@ class MainPageViewController: UIViewController {
         let memberListView = MainPageComponents.createMemberListView(members: members, target: self)
         contentStackView.addArrangedSubview(memberListView)
         
+        membersTitleView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        memberListView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100).isActive = true
+
+    
         // Auto Layout 설정
         NSLayoutConstraint.activate([
             // 상단 노란색 배경 제약
@@ -91,7 +95,10 @@ class MainPageViewController: UIViewController {
             contentStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             contentStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            contentStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+            contentStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            
+            // 여기 추가: ContentStackView의 높이를 ScrollView의 높이 이상으로 설정 (또는 명시적으로 콘텐츠 높이를 계산할 수도 있습니다)
+            contentStackView.heightAnchor.constraint(greaterThanOrEqualTo: scrollView.heightAnchor)
         ])
     }
     

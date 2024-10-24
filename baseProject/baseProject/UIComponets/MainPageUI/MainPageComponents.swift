@@ -117,26 +117,9 @@ class MainPageComponents {
         for (index, member) in members.enumerated() {
             print("멤버 생성 중: \(member.name)") // 멤버가 제대로 전달되는지 확인
             let memberButton = MainPageMemberButtonComponent.createMemberButton(for: member, target: target, index: index)
-            
-            // 버튼 크기 제약 추가
-            memberButton.translatesAutoresizingMaskIntoConstraints = false
             stackView.addArrangedSubview(memberButton)
         }
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let scrollView = UIScrollView()
-        scrollView.addSubview(stackView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor) // 수평 스크롤 방지
-        ])
-        
-        return scrollView
+        return stackView
     }
 }

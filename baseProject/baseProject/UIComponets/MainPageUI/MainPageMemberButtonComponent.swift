@@ -15,6 +15,7 @@ class MainPageMemberButtonComponent {
     ///   - index: 멤버 배열의 인덱스
     /// - Returns: 멤버 버튼을 담은 UIButton
     static func createMemberButton(for member: TeamMember, target: MainPageViewController, index: Int) -> UIButton {
+        print("멤버 버튼 생성됨: \(member.name)")
         let button = UIButton(type: .system)
         button.tag = index
         button.backgroundColor = UIColor.clear
@@ -63,7 +64,7 @@ class MainPageMemberButtonComponent {
         
         // 버튼에 StackView 추가
         button.addSubview(stackView)
-
+        print("StackView 버튼 추가 \([index])")
         // 화살표 이미지의 크기 제약 설정
         NSLayoutConstraint.activate([
             arrowImageView.widthAnchor.constraint(equalToConstant: 40),
@@ -79,18 +80,18 @@ class MainPageMemberButtonComponent {
         ])
 
         // 버튼 높이 설정
-        button.heightAnchor.constraint(equalToConstant: 80).isActive = true
+//        button.heightAnchor.constraint(equalToConstant: 80).isActive = true
 
-        // 위와 아래 보더라인 추가
-        let topBorder = CALayer()
-        topBorder.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0).cgColor
-        topBorder.frame = CGRect(x: 0, y: 0, width: button.frame.size.width, height: 1)
-        button.layer.addSublayer(topBorder)
-
-        let bottomBorder = CALayer()
-        bottomBorder.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0).cgColor
-        bottomBorder.frame = CGRect(x: 0, y: button.frame.size.height - 1, width: button.frame.size.width, height: 1)
-        button.layer.addSublayer(bottomBorder)
+//        // 위와 아래 보더라인 추가
+//        let topBorder = CALayer()
+//        topBorder.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0).cgColor
+//        topBorder.frame = CGRect(x: 0, y: 0, width: button.frame.size.width, height: 1)
+//        button.layer.addSublayer(topBorder)
+//
+//        let bottomBorder = CALayer()
+//        bottomBorder.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0).cgColor
+//        bottomBorder.frame = CGRect(x: 0, y: button.frame.size.height - 1, width: button.frame.size.width, height: 1)
+//        button.layer.addSublayer(bottomBorder)
         
         // 자동으로 레이아웃 조정할 수 있도록 추가로 설정
         button.layer.masksToBounds = true
