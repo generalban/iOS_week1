@@ -13,16 +13,16 @@ struct MyViewControllerPreview: PreviewProvider {
             // 전체 멤버 리스트 생성
             let allMembers = [
                 TeamMember(
-                    name: "김상민",
+                    name: "한현준",
                     mbti: "INFJ",
                     role: "Developer",
-                    bio: "저는 예비 iOS 개발자 입니다.",
-                    imageName: "🐻",
-                    blogUrl: "https://tistory.com",
-                    githubUrl: "https://github.com/",
+                    bio: "24세, 컴퓨터공학과 휴학중입니다.",
+                    imageName: "🫡",
+                    blogUrl: "https://tistory.com/swdeveloperhj",
+                    githubUrl: "https://github.com/HyeonJunHan0315",
                     cards: [
-                        Card(title: "두번째 카드", content: "첫번째 카드의 내용은 주절 주절 주절"),
-                        Card(title: "첫번쨰 카드", content: "두번째 카드의 내용은 주절 주절 주절")
+                        Card(title: "첫번째 카드", content: "개발 경험 없음, iOS 입문"),
+                        Card(title: "두번째 카드", content: "취미 : 야구, 음악 감상, 게임")
                     ]
                 ),
                 TeamMember(
