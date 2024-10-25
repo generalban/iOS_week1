@@ -68,6 +68,11 @@ class MainPageMemberButtonComponent {
         // containerView에 stackView 추가
         containerView.addSubview(stackView)
         
+        // 이미지로 하단에 선 추가
+        let bottomLineImageView = UIImageView(image: UIImage(named: "line")) // "line" 이미지를 하단에 추가
+        bottomLineImageView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(bottomLineImageView)
+        
         // 화살표 버튼의 크기 제약 설정
         NSLayoutConstraint.activate([
             arrowButton.widthAnchor.constraint(equalToConstant: 40),
@@ -81,10 +86,18 @@ class MainPageMemberButtonComponent {
             stackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10)
         ])
-
+        
+        // 상단과 하단에 선 이미지 제약 설정
+        NSLayoutConstraint.activate([
+            
+            bottomLineImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            bottomLineImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            bottomLineImageView.heightAnchor.constraint(equalToConstant: 1) // 선 두께 설정
+        ])
+        
         // 컨테이너 뷰 자동 레이아웃 적용
         containerView.layer.masksToBounds = true
-        
+
         return containerView
     }
 }

@@ -21,4 +21,9 @@ class MainPageComponents {
     static func createMemberListView(members: [TeamMember], target: UIViewController) -> UIView {
         return MainPageMemberListComponent.createMemberListView(members: members, target: target as! MainPageViewController)
     }
+    
+    // SPARTA 하단 섹션
+    static func createSpartaView() -> UIView{
+        return MainPageSpartaComponent.createSpartaView()
+    }
 }

@@ -80,12 +80,32 @@ class MainPageViewController: UIViewController, UIScrollViewDelegate {
         let membersTitleView = MainPageComponents.createMembersTitleView()
         contentStackView.addArrangedSubview(membersTitleView)
         
+        // -> 멤버 섹션 하단 라인 추가
+        // 하단 선 이미지를 추가할 UIImageView 생성
+        let bottomLineImageView = UIImageView(image: UIImage(named: "line")) // 선 이미지 추가
+        bottomLineImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bottomLineImageView)
+        
+        // 선 이미지 제약 설정
+        NSLayoutConstraint.activate([
+            bottomLineImageView.topAnchor.constraint(equalTo: membersTitleView.bottomAnchor, constant: 10), // 멤버 타이틀 섹션 하단에 위치
+            bottomLineImageView.centerXAnchor.constraint(equalTo: membersTitleView.centerXAnchor),
+            bottomLineImageView.heightAnchor.constraint(equalToConstant: 1) // 선의 높이(두께)를 2 포인트로 설정
+        ])
+        
+        
         // 3. 멤버 리스트 섹션 추가
         let memberListView = MainPageComponents.createMemberListView(members: members, target: self)
         contentStackView.addArrangedSubview(memberListView)
         
+        // 4. SPARTA 하단 섹션 추가
+        let spartaView = MainPageComponents.createSpartaView()
+        contentStackView.addArrangedSubview(spartaView)
+        
+        // 각 뷰의 고정 높이 설정
         membersTitleView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         memberListView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100).isActive = true
+        spartaView.heightAnchor.constraint(equalToConstant: 200).isActive = true  // 필요에 따라 높이 수정
 
         // Auto Layout 설정
         NSLayoutConstraint.activate([
