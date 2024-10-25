@@ -4,6 +4,7 @@
 // 작성일: 2024-10-23
 
 import UIKit
+import SwiftUI
 
 class TeamMemberViewController: UIViewController {
     
@@ -62,23 +63,25 @@ class TeamMemberViewController: UIViewController {
         
         switch member.name {
         case "김동글":
-            storyboardName = "" // 스토리보드 파일 이름 (확장자 .storyboard 제외)
-            storyboardID = "" // Storyboard ID
+            storyboardName = "NemoStoryboard" // 스토리보드 파일 이름 (확장자 .storyboard 제외)
+            storyboardID = "NemoStoryboard" // Storyboard ID
         case "김상민":
             storyboardName = "Jamong"
             storyboardID = "JamongStroyboard"
         case "반성준":
-            storyboardName = ""
-            storyboardID = ""
+            // 반성준의 경우 SwiftUI 뷰 사용
+            let swiftUIView = ContentView() // SwiftUI 뷰 인스턴스 생성
+            let hostingController = UIHostingController(rootView: swiftUIView) // UIHostingController로 래핑
+            navigationController?.pushViewController(hostingController, animated: true)
         case "서지민":
-            storyboardName = ""
-            storyboardID = ""
+            storyboardName = "JiminStoryboard"
+            storyboardID = "JiminViewController"
         case "임성수":
-            storyboardName = ""
-            storyboardID = ""
+            storyboardName = "SeongsooStoryboard"
+            storyboardID = "SeongsooStoryboard"
         case "한현준":
-            storyboardName = ""
-            storyboardID = ""
+            storyboardName = "hyeonjun"
+            storyboardID = "hyeonjun"
         default:
             return // 해당 멤버가 없는 경우 아무 작업도 하지 않음
         }
