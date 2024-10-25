@@ -13,9 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-
+        
+        // 루트 뷰 컨트롤러 설정
+        let rootVC = UINavigationController(rootViewController: MainPageViewController())
+        
+        // 자기 스토리보드를 위한 test view 지정. 사용할 경우 바로 윗줄 주석처리하시고 아래 주석 풀어서 사용하세요.
+//        let storyboard = UIStoryboard(name: "SeongsooStoryboard", bundle: nil)
+//        let testViewController = storyboard.instantiateViewController(withIdentifier: "SeongsooViewController")
+//        let rootVC = UINavigationController(rootViewController: testViewController)
+        
+        
         window = UIWindow(windowScene: windowScene)
-        let rootVC = UINavigationController(rootViewController: MainPageViewController()) // 루트 뷰 컨트롤러 설정
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
     }
