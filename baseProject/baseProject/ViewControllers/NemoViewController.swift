@@ -20,8 +20,9 @@ class NemoViewController: UIViewController {
     }
     
     @IBAction func clickMainButton(_ sender: UIButton) {
-        
+
         mainButton.titleLabel?.text = "버 텨"
+
         
     }
     

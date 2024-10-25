@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jamong Stroyboard View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="JamongStroyboard" id="Y6W-OH-hqX" customClass="JamongStroyboardViewController" customModule="baseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JamongImage" translatesAutoresizingMaskIntoConstraints="NO" id="nZa-Wl-WFv">
+                                <rect key="frame" x="16" y="99" width="361" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="5P8-ar-57p"/>
+                                    <constraint firstAttribute="height" constant="195" id="XID-ZE-Xgd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 시간 새벽 4시 26분 너무 졸린상태라 더 이상은 무리.. 내 플레이 그라운드는 여기서 끝내야 하지 않을까.. 살려주세요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7R-RA-ObF">
+                                <rect key="frame" x="30" y="344" width="333" height="179.33333333333337"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.89803921568627454" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nZa-Wl-WFv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="88l-ah-LDo"/>
+                            <constraint firstAttribute="trailing" secondItem="l7R-RA-ObF" secondAttribute="trailing" constant="30" id="Mta-VW-f9L"/>
+                            <constraint firstItem="nZa-Wl-WFv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="Ovd-3v-yxm"/>
+                            <constraint firstItem="l7R-RA-ObF" firstAttribute="top" secondItem="nZa-Wl-WFv" secondAttribute="bottom" constant="50" id="P0t-XU-MpI"/>
+                            <constraint firstItem="l7R-RA-ObF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="RXn-ev-8F9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nZa-Wl-WFv" secondAttribute="trailing" constant="16" id="gXF-Mu-TVR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IamgeView" destination="nZa-Wl-WFv" id="PkN-PC-ghK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.618320610687022" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JamongImage" width="1162" height="620"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

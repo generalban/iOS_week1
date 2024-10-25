@@ -20,6 +20,7 @@ struct MyViewControllerPreview: PreviewProvider {
                     imageName: "🐻",
                     blogUrl: "https://tistory.com",
                     githubUrl: "https://github.com/",
+                    mainBio: "얍",
                     cards: [
                         Card(title: "두번째 카드", content: "첫번째 카드의 내용은 주절 주절 주절"),
                         Card(title: "첫번쨰 카드", content: "두번째 카드의 내용은 주절 주절 주절")
@@ -33,6 +34,7 @@ struct MyViewControllerPreview: PreviewProvider {
                     imageName: "🐶",
                     blogUrl: "https://tistory.com",
                     githubUrl: "https://github.com/",
+                    mainBio: "얍",
                     cards: [
                         Card(title: "두번째 카드", content: "첫번째 카드의 내용은 주절 주절 주절"),
                         Card(title: "첫번쨰 카드", content: "두번째 카드의 내용은 주절 주절 주절")

@@ -31,6 +31,9 @@ class MemberPageButtonComponent {
         stackView.alignment = .center
         stackView.spacing = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // 스택뷰가 터치 이벤트를 받지 않도록 설정
+        stackView.isUserInteractionEnabled = false
 
         button.addSubview(stackView)
 
