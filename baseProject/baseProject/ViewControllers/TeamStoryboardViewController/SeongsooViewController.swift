@@ -9,19 +9,14 @@ import WebKit
 class SeongsooViewController: UIViewController {
     
     @IBOutlet weak var seongsooWebView: WKWebView!
-    
-    @IBOutlet weak var myLabel: UILabel!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         let url = URL(string: "https://imseongto.vercel.app")!
-        myLabel.text = url.absoluteString
         
-        if seongsooWebView != nil {
-            seongsooWebView.load(URLRequest(url: url))
-        }
+        seongsooWebView.load(URLRequest(url: url))
         
     }
     

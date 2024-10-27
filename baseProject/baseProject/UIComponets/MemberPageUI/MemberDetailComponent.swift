@@ -16,7 +16,7 @@ class MemberDetailComponent {
 
         let bioLabel = UILabel()
         bioLabel.text = member.bio
-        bioLabel.font = UIFont(name: "NotoSansKR-Thin", size: 16)
+        bioLabel.font = UIFont(name: "NotoSansKR-Light", size: 16)
         bioLabel.textAlignment = .left
         bioLabel.numberOfLines = 3
 

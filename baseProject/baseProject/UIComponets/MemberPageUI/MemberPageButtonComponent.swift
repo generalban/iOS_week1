@@ -22,7 +22,7 @@ class MemberPageButtonComponent {
 
         let nameLabel = UILabel()
         nameLabel.text = member.name
-        nameLabel.font = UIFont(name: "NotoSansKR-Thin", size: 16)
+        nameLabel.font = UIFont(name: "NotoSansKR-Light", size: 16)
         nameLabel.textAlignment = .center
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
 

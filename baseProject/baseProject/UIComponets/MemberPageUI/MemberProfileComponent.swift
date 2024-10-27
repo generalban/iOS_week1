@@ -63,17 +63,17 @@ class MemberProfileComponent {
 
         let mbtiLabel = UILabel()
         mbtiLabel.text = "MBTI"
-        mbtiLabel.font = UIFont(name: "NotoSansKR-Thin", size: 14)
+        mbtiLabel.font = UIFont(name: "NotoSansKR-Light", size: 14)
         mbtiLabel.textAlignment = .center
 
         let blogLabel = UILabel()
         blogLabel.text = "Blog"
-        blogLabel.font = UIFont(name: "NotoSansKR-Thin", size: 14)
+        blogLabel.font = UIFont(name: "NotoSansKR-Light", size: 14)
         blogLabel.textAlignment = .center
 
         let githubLabel = UILabel()
         githubLabel.text = "Github"
-        githubLabel.font = UIFont(name: "NotoSansKR-Thin", size: 14)
+        githubLabel.font = UIFont(name: "NotoSansKR-Light", size: 14)
         githubLabel.textAlignment = .center
 
         let mbtiStackView = UIStackView(arrangedSubviews: [mbtiInfoLabel, mbtiLabel])

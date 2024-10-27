@@ -77,14 +77,14 @@ class MainDetailPageComponents {
         howToWorkTitle.translatesAutoresizingMaskIntoConstraints = false
         section2Label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            howToWorkTitle.topAnchor.constraint(equalTo: howToWorkView.topAnchor, constant: 16),
+            howToWorkTitle.topAnchor.constraint(equalTo: howToWorkView.topAnchor, constant: 30),
             howToWorkTitle.leadingAnchor.constraint(equalTo: howToWorkView.leadingAnchor, constant: 20),
             howToWorkTitle.trailingAnchor.constraint(equalTo: howToWorkView.trailingAnchor, constant: -20),
             
             section2Label.topAnchor.constraint(equalTo: howToWorkTitle.bottomAnchor, constant: 8),
             section2Label.leadingAnchor.constraint(equalTo: howToWorkView.leadingAnchor, constant: 20),
             section2Label.trailingAnchor.constraint(equalTo: howToWorkView.trailingAnchor, constant: -20),
-            section2Label.bottomAnchor.constraint(equalTo: howToWorkView.bottomAnchor, constant: -16)
+            section2Label.bottomAnchor.constraint(equalTo: howToWorkView.bottomAnchor, constant: -40)
         ])
         
         // 3. "Project Roles" 섹션 (볼드 처리)
@@ -306,7 +306,7 @@ class MainDetailPageComponents {
         techContent4.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            techStackTitle.topAnchor.constraint(equalTo: techStackView.topAnchor, constant: 16),
+            techStackTitle.topAnchor.constraint(equalTo: techStackView.topAnchor, constant: 30),
             techStackTitle.leadingAnchor.constraint(equalTo: techStackView.leadingAnchor, constant: 20),
             techStackTitle.trailingAnchor.constraint(equalTo: techStackView.trailingAnchor, constant: -20),
             
@@ -333,7 +333,7 @@ class MainDetailPageComponents {
             techContent4.topAnchor.constraint(equalTo: techTitle4.bottomAnchor, constant: 8),
             techContent4.leadingAnchor.constraint(equalTo: techStackView.leadingAnchor, constant: 20),
             techContent4.trailingAnchor.constraint(equalTo: techStackView.trailingAnchor, constant: -20),
-            techContent4.bottomAnchor.constraint(equalTo: techStackView.bottomAnchor, constant: -16)
+            techContent4.bottomAnchor.constraint(equalTo: techStackView.bottomAnchor, constant: -40)
         ])
         
         // UIStackView에 섹션들을 추가

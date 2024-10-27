@@ -16,15 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF1-Dw-AqZ">
-                                <rect key="frame" x="176" y="170" width="41" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lr9-Bx-GfU">
-                                <rect key="frame" x="0.0" y="331" width="393" height="453"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edc-vP-Pmp">
+                                <rect key="frame" x="0.0" y="95" width="393" height="680"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -33,18 +28,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="tF1-Dw-AqZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="111" id="4f7-Vj-sTZ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lr9-Bx-GfU" secondAttribute="bottom" constant="34" id="V0N-Ae-mfE"/>
-                            <constraint firstItem="lr9-Bx-GfU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="coN-T6-Mdt"/>
-                            <constraint firstItem="tF1-Dw-AqZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="176" id="kvM-wV-MlU"/>
-                            <constraint firstItem="lr9-Bx-GfU" firstAttribute="top" secondItem="tF1-Dw-AqZ" secondAttribute="bottom" constant="140" id="o2L-Zw-zvi"/>
-                            <constraint firstItem="lr9-Bx-GfU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="pHx-Zc-2bS"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="myLabel" destination="tF1-Dw-AqZ" id="ZQ1-uV-23h"/>
-                        <outlet property="seongsooWebView" destination="lr9-Bx-GfU" id="SyF-Fs-ufc"/>
+                        <outlet property="seongsooWebView" destination="edc-vP-Pmp" id="qbq-Zl-MLh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -53,9 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
