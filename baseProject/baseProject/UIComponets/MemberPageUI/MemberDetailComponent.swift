@@ -8,7 +8,7 @@ import UIKit
 class MemberDetailComponent {
 
     /// 멤버 이름, 소개, 플레이그라운드 버튼을 포함하는 StackView 생성
-    static func createMemberDetailStackView(for member: TeamMember) -> UIStackView {
+    static func createMemberDetailStackView(for member: TeamMember, target: TeamMemberViewController) -> UIStackView {
         let nameLabel = UILabel()
         nameLabel.text = member.name
         nameLabel.font = UIFont(name: "NotoSansKR-Bold", size: 16)
@@ -16,7 +16,7 @@ class MemberDetailComponent {
 
         let bioLabel = UILabel()
         bioLabel.text = member.bio
-        bioLabel.font = UIFont(name: "NotoSansKR-Thin", size: 16)
+        bioLabel.font = UIFont(name: "NotoSansKR-Light", size: 16)
         bioLabel.textAlignment = .left
         bioLabel.numberOfLines = 3
 
@@ -26,6 +26,9 @@ class MemberDetailComponent {
         playgroundButton.titleLabel?.font = UIFont(name: "NotoSansKR-Light", size: 16)
         playgroundButton.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0)
         playgroundButton.layer.cornerRadius = 8
+
+        // target을 TeamMemberViewController로 지정하고, 해당 메서드를 호출하도록 설정
+        playgroundButton.addTarget(target, action: #selector(target.openPlayground), for: .touchUpInside)
 
         let labelStackView = UIStackView(arrangedSubviews: [nameLabel, bioLabel])
         labelStackView.axis = .vertical

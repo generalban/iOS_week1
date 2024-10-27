@@ -34,7 +34,7 @@ class MemberPageComponents {
         contentStackView.addArrangedSubview(horizontalStackView)
         
         // 멤버 이름, 소개, 플레이그라운드 버튼 섹션 추가
-        let memberDetailStackView = MemberDetailComponent.createMemberDetailStackView(for: member)
+        let memberDetailStackView = MemberDetailComponent.createMemberDetailStackView(for: member, target: target)
         contentStackView.addArrangedSubview(memberDetailStackView)
         
         // 멤버 찾기 섹션 추가

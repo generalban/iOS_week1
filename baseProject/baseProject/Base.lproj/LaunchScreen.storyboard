@@ -10,36 +10,25 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="launchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Fw2-EA-WF4">
-                                <rect key="frame" x="86.333333333333329" y="219.00000000000003" width="220.66666666666669" height="321.66666666666674"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="W7i-Yq-kZd">
-                                        <rect key="frame" x="0.0" y="0.0" width="220.66666666666666" height="232"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoText" translatesAutoresizingMaskIntoConstraints="NO" id="lEj-qf-0kT">
-                                        <rect key="frame" x="0.0" y="254.99999999999997" width="220.66666666666666" height="66.666666666666657"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="lEj-qf-0kT" firstAttribute="centerX" secondItem="Fw2-EA-WF4" secondAttribute="centerX" id="Ecp-Ld-JlT"/>
-                                    <constraint firstAttribute="bottom" secondItem="lEj-qf-0kT" secondAttribute="bottom" id="GTR-Le-UaN"/>
-                                    <constraint firstItem="W7i-Yq-kZd" firstAttribute="centerX" secondItem="Fw2-EA-WF4" secondAttribute="centerX" id="Un4-Iw-tpc"/>
-                                    <constraint firstItem="W7i-Yq-kZd" firstAttribute="top" secondItem="Fw2-EA-WF4" secondAttribute="top" id="b1n-fR-xZb"/>
-                                    <constraint firstAttribute="bottom" secondItem="lEj-qf-0kT" secondAttribute="bottom" id="euU-Z4-m0D"/>
-                                    <constraint firstItem="lEj-qf-0kT" firstAttribute="top" secondItem="W7i-Yq-kZd" secondAttribute="bottom" constant="23" id="zE5-hi-MeG"/>
-                                </constraints>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="W7i-Yq-kZd">
+                                <rect key="frame" x="93.666666666666686" y="270" width="206" height="232"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoText" translatesAutoresizingMaskIntoConstraints="NO" id="lEj-qf-0kT">
+                                <rect key="frame" x="86.333333333333329" y="525" width="220.66666666666669" height="66.666666666666629"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.89803921568627454" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Fw2-EA-WF4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ERl-e6-Rk3"/>
-                            <constraint firstItem="Fw2-EA-WF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="RHa-6o-Gd1"/>
+                            <constraint firstItem="lEj-qf-0kT" firstAttribute="top" secondItem="W7i-Yq-kZd" secondAttribute="bottom" constant="23" id="7Cn-Nh-l32"/>
+                            <constraint firstItem="W7i-Yq-kZd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-40" id="MUB-rv-fTr"/>
+                            <constraint firstItem="W7i-Yq-kZd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xj1-uU-3tC"/>
+                            <constraint firstItem="lEj-qf-0kT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="npY-c3-wv4"/>
                         </constraints>
                     </view>
                 </viewController>

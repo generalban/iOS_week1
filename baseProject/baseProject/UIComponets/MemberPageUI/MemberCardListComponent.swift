@@ -22,6 +22,11 @@ class MemberCardListComponent {
             contentLabel.text = card.content
             contentLabel.font = UIFont.systemFont(ofSize: 14)
             contentLabel.numberOfLines = 0
+            let attrString = NSMutableAttributedString(string: contentLabel.text!)
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 5
+            attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
+            contentLabel.attributedText = attrString
 
             cardView.addSubview(titleLabel)
             cardView.addSubview(contentLabel)
@@ -29,13 +34,13 @@ class MemberCardListComponent {
             titleLabel.translatesAutoresizingMaskIntoConstraints = false
             contentLabel.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                titleLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 10),
+                titleLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 20),
                 titleLabel.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 16),
                 titleLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -16),
                 contentLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
                 contentLabel.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 16),
                 contentLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -16),
-                contentLabel.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -10)
+                contentLabel.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -30)
             ])
 
             stackView.addArrangedSubview(cardView)
